@@ -1,0 +1,8 @@
+name: ChatModerationWithAI
+version: '1.0'
+main: github.com.thecaptaincook.chatModerationWithAI.ChatModerationWithAI
+api-version: '1.21'
+prefix: CMW-AI
+authors: [ The Captain Cook ]
+description: This plugin makes specially crafted soup make you fly
+website: https://github.com/thecaptaincook
