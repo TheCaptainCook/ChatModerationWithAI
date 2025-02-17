@@ -1,0 +1,53 @@
+api:
+  key: "your-openai-api-key"
+  timeout: 5000
+  retry_attempts: 3
+  cache_duration: 3600
+
+thresholds:
+  harassment: 0.7
+  harassment_threatening: 0.8
+  hate: 0.8
+  hate_threatening: 0.9
+  sexual: 0.9
+  sexual_minors: 0.99
+  violence: 0.8
+  violence_graphic: 0.9
+  self_harm: 0.7
+  self_harm_intent: 0.8
+  self_harm_instructions: 0.9
+  illicit: 0.8
+  illicit_violent: 0.9
+
+messages:
+  prefix: "&8[&cModerator&8]"
+  blocked: "{prefix} &cYour message was blocked due to {reason}."
+  warning: "{prefix} &eWarning: Your message contains potentially inappropriate content."
+  error: "{prefix} &cAn error occurred while processing your message."
+  timeout: "{prefix} &cYou have been timed out for {duration} due to spam."
+  ban: "{prefix} &cYou have been banned for excessive violations."
+
+links:
+  block_all: true
+  whitelist:
+    - "minecraft.net"
+    - "spigotmc.org"
+
+spam_protection:
+  enabled: true
+  message_cooldown: 1000  # Milliseconds between messages
+  violations_before_timeout: 3
+  timeout_duration: 300  # Seconds
+  violations_before_ban: 5
+  violation_expiry: 3600  # Seconds until violations reset
+  ban_duration: 86400  # Seconds, set to -1 for permanent
+
+logging:
+  enabled: true
+  include_messages: true
+  file: "moderation.log"
+
+performance:
+  cache_size: 1000
+  async_processing: true
+  batch_processing: false
