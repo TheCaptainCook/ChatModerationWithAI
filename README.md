@@ -130,7 +130,7 @@ This project is licensed under GNU General Public License v3.0 - see the [LICENS
 If you encounter any issues or need help, please:
 1. Check the [Wiki](https://github.com/TheCaptainCook/ChatModerationWithAI/wiki) for documentation
 2. Open an [Issue](https://github.com/TheCaptainCook/ChatModerationWithAI/issues) on GitHub
-3. Send me a mail - [The Captain Cook](Masem@duck.com)
+3. Send me a mail - [The Captain Cook](mailto:Masem@duck.com)
 
 ## Credits
 
