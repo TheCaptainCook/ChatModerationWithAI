@@ -1,8 +1,21 @@
 name: ChatModerationWithAI
-version: '1.0'
+version: '${project.version}'
 main: github.com.thecaptaincook.chatModerationWithAI.ChatModerationWithAI
 api-version: '1.21'
 prefix: CMW-AI
 authors: [ The Captain Cook ]
-description: This plugin makes specially crafted soup make you fly
+description: A Minecraft plugin that moderates chat using OpenAI's moderation API
 website: https://github.com/thecaptaincook
+
+commands:
+  aichatmod:
+    description: Main command for AI Chat Moderator
+    usage: /<command> [reload|stats]
+    permission: aichatmod.admin
+permissions:
+  aichatmod.admin:
+    description: Allows access to all AI Chat Moderator commands
+    default: op
+  aichatmod.bypass:
+    description: Allows bypassing chat moderation
+    default: op
